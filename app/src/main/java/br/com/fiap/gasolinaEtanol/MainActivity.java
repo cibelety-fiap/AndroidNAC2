@@ -1,4 +1,4 @@
-package br.com.fiap.gasolinaouetanol;
+package br.com.fiap.gasolinaEtanol;
 
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
@@ -61,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
     private void calcularMelhorCombustivel() {
         if ((ethanolPrice/gasPrice) >= 0.7) {
             answerTextInputEditText.setText(R.string.gasoline);
-            resultImageView.setImageResource(R.drawable.barril_petroleo);
+            resultImageView.setImageResource(R.drawable.gasolina);
         } else {
             answerTextInputEditText.setText(R.string.ethanol);
-            resultImageView.setImageResource(R.drawable.cana_acucar);
+            resultImageView.setImageResource(R.drawable.ethanol);
         }
 
     }
